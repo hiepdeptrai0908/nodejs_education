@@ -18,11 +18,11 @@ app.engine(
         extname: '.hbs',
     }),
 ); // Định nghĩa engine
-            app.set('view engine', 'hbs'); // Set engine to 'handlebars' đã định nghĩa
-app.set(            'views', path.join(__dirname, 'resources/views')); // set views folder
+app.set('view engine', 'hbs'); // Set engine to 'handlebars' đã định nghĩa
+app.set('views', path.join(__dirname, 'resources/views')); // set views folder
 
 // Routes init
-route(app)      ;
+route(app);
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
